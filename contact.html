@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- aos css link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <!-- logo div -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/siddiqians-llc-high-resolution-logo-transparent (1).png" style="width: 100%;" alt="">
+            </a>
+        </div>
+        <!-- links div -->
+
+        <div class="links">
+            <ul>
+                <li><a href="">about <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our mission</a></li>
+                        <li><a href="">our vision</a></li>
+                        <li><a href="">our team</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="">services <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">our services</a></li>
+                        <li><a href="">how we work?</a></li>
+                        <!-- <li><a href="">our vision</a></li> -->
+                        <!-- <li><a href="">our team</a></li> -->
+
+                    </ul>
+
+                </li>
+                <li><a href="">portfolio <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">our success stories</a></li>
+                        <!-- <li><a href="">results acheived</a></li>                        -->
+                        <li><a href="">clients testimonal</a></li>
+                        <li><a href="">why choose us?</a></li>
+                    </ul>
+
+                </li>
+         
+                <li><a href="">contact <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="#get-in-touch">get in touch</a></li>
+                        <li><a href="#form">contact us</a></li>
+                        <li><a href="#connect">connect with us</a></li>
+                        <li><a href="#why-contact-us">why contact us?</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="">faqs <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">general questions</a></li>
+                        <li><a href="">product hunting</a></li>
+                        <li><a href="">product sourcing</a></li>
+                        <li><a href="">listing optimization</a></li>
+                        <li><a href="">ppc ads management</a></li>
+                        <li><a href="">invetory method</a></li>
+                        <li><a href="">miscellaneous</a></li>
+
+                    </ul>
+
+                </li>
+
+
+            </ul>
+        </div>
+        <!-- search div -->
+        <div class="search">
+            <ul>
+                <li><i class="fa-solid fa-magnifying-glass"></i>
+                    <ul class="dropdown" style="transform: translateX(-95%);margin: 3%;min-width: 40rem;">
+                        <li>
+                            <input type="search" class="search" placeholder="Search" id="search-input">
+                            <button type="button" class="searchbtn" onclick="performSearch()">Search</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- header -->
+    <header>
+        <h1 style="font-size: 8vw;">contact us</h1>
+        <h3>"Your Partner in Digital Growth"</h3>
+        <div class="arrow-down" onclick="scrollToNextSection()" ><a href="#contact" style="font-size: 5vw;color: goldenrod;">↓</a></div>
+    </header>
+    <!-- header -->
+    <div class="contact" id="contact">
+
+        <!-- contact form  -->
+        <div class="contacts form" id="form">
+            <h1>contact us</h1>
+            <br>
+            <p>For your convenience, you can also fill out the contact form below, and a member of our team will get
+                back to you as soon as possible.
+            </p>
+            <br>
+
+            <form action="">
+
+                <label for="firstname">First Name: <br>
+                    <input type="text" placeholder="First Name">
+                </label>
+                <br>
+                <label for="lastname"> Last Name: <br>
+                    <input type="text" placeholder="Last Name">
+                </label>
+                <br>
+                <label for="email">Email Address: <br>
+                    <input type="text" name="email" id="email" placeholder="someone@gmail.com ">
+
+                </label>
+                <br>
+                <label for="phone">Phone Number: <br>
+                    <input type="number" name="phone" id="phone" placeholder="03xx xxxxxxx">
+
+                </label>
+                <br>
+                <label for="message">Message: <br>
+                    <input type="text" name="message" id="message" placeholder="Type Your Message Here.....">
+
+                </label>
+                <br>
+                <button>submit</button>
+            </form>
+        </div>
+        <!-- contact form  -->
+
+
+        <div class="contacts links" id="get-in-touch">
+            <!-- get in touch -->
+            <div class="get-in-touch">
+                <h1>get in touch</h1>
+                <br>
+                <h2>email:</h2>
+                <br>
+                <p>for general inquiries and support,please email us at <span><a
+                            href="mailto:info@siddiqianslic.com">info@siddiqianslic.com</a></span> </p>
+                <br>
+                <h2>phone:</h2>
+                <br>
+                <p>you can reach us by phone during our buisness hours: <span><a href="tel:+1 (123) 456-7890">+1 (123)
+                            456-7890</a></span></p>
+                <br>
+                <h2>buisness hours:</h2>
+                <br>
+                <p>monday to friday : 9:00am - 6:00pm (est) saturday: 10:00am - 4:00pm (est) sunday:closed</p>
+                <br>
+                <h2>office address:</h2>
+                <br>
+                <p>siddiqins llc <br>1234 buisness park drive , suite 100 <br> city,state,zip code <br>usa</p>
+            </div>
+            <!-- get in touch -->
+
+            <!-- connect with us  -->
+            <div class="connect-with-us" id="connect">
+                <br>
+                <h1>connect with us</h1>
+                <div class="link">
+                    <br>
+                    <h1><a href=""><i class="fa-brands fa-facebook"></i></a></h1>
+                    <h1><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></h1>
+                    <h1><a href=""><i class="fa-brands fa-linkedin"></i></a></h1>
+                </div>
+            </div>
+            <!-- connect with us  -->
+        </div>
+    </div>
+
+
+
+    <!-- why contact us? -->
+    <div class="why-contact-us" id="why-contact-us">
+        <h1 style="font-size: 2.3vw;">why contact us?</h1>
+        <ul>
+            <li>
+                <h1>Personalized Support: <span>Our team is dedicated to providing you with tailored assistance to meet your specific needs.</span> </h1>
+            </li>
+           
+            <li>
+                <h1>Expert Guidance: <span>Benefit from our extensive knowledge and expertise in Amazon services.</span> </h1>
+            </li>
+          
+            <li>
+                <h1>Prompt Response: <span>We strive to respond to all inquiries within 24 hours.</span></h1>
+            </li>
+           
+
+        </ul>
+    </div>
+    <!-- why contact us? -->
+
+    <!-- aos js links -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 300,
+                duration: 300,
+                easing: 'ease-in-out',
+                // delay: 300,
+            }
+        );
+    </script>
+    <!-- aos links -->
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+    <!-- javascript link -->
+
+
+</body>
+
+</html>

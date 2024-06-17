@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- aos css link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <!-- logo div -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/siddiqians-llc-high-resolution-logo-transparent (1).png" style="width: 100%;" alt="">
+            </a>
+        </div>
+        <!-- links div -->
+
+        <div class="links">
+            <ul>
+                <li><a href="">about <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our mission</a></li>
+                        <li><a href="">our vision</a></li>
+                        <li><a href="">our team</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="">services <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">our services</a></li>
+                        <li><a href="">how we work?</a></li>
+                        <!-- <li><a href="">our vision</a></li> -->
+                        <!-- <li><a href="">our team</a></li> -->
+
+                    </ul>
+
+                </li>
+                <li><a href="">portfolio <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">our success stories</a></li>
+                        <!-- <li><a href="">results acheived</a></li>                        -->
+                        <li><a href="">clients testimonal</a></li>
+                        <li><a href="">why choose us?</a></li>                    </ul>
+
+                </li>
+          
+                <li><a href="">contact <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">get in touch</a></li>
+                        <li><a href="">contact us</a></li>
+                        <li><a href="">connect with us</a></li>
+                        <li><a href="">why contact us?</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="">faqs <i class="fa-solid fa-caret-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li><a href="">general questions</a></li>
+                        <li><a href="">product hunting</a></li>
+                        <li><a href="">product sourcing</a></li>
+                        <li><a href="">listing optimization</a></li>
+                        <li><a href="">ppc ads management</a></li>
+                        <li><a href="">invetory method</a></li>
+                        <li><a href="">miscellaneous</a></li>
+
+                    </ul>
+
+                </li>
+
+
+            </ul>
+        </div>
+        <!-- search div -->
+        <div class="search">
+            <ul>
+                <li><i class="fa-solid fa-magnifying-glass"></i>
+                    <ul class="dropdown" style="transform: translateX(-95%);margin: 3%;min-width: 40rem;">
+                        <li>
+                            <input type="search" class="search" placeholder="Search" id="search-input">
+                            <button type="button" class="searchbtn" onclick="performSearch()">Search</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- header -->
+    <header>
+        <h1>siddiqians llc</h1>
+        <h3>The one with the master touch</h3>
+        <!-- <div class="arrow-down" onclick="scrollToNextSection()">↓</div> -->
+    </header>
+    <!-- header -->
+
+
+    <!-- aos js links -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 300,
+                duration: 300,
+                easing: 'ease-in-out',
+                // delay: 300,
+            }
+        );
+    </script>
+    <!-- aos links -->
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+    <!-- javascript link -->
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 /* Resetting margins and padding for all elements */
 @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ ul li a {
     text-align: center;
     font-size: 1.5vw;
     /* Base font size for main links */
-    color:#f1ca68;
+    color: #f1ca68;
 
 }
 
@@ -57,7 +58,7 @@ nav ul li ul.dropdown {
 ul li:hover ul.dropdown {
     /* margin-bottom: solid; */
     display: block;
-    color:#f1ca68;
+    color: #f1ca68;
 
 }
 
@@ -73,7 +74,7 @@ nav ul li i {
 
 ul li ul.dropdown li:hover {
     color: black;
-    background-color:#f1ca68;
+    background-color: #f1ca68;
 }
 
 ul li ul.dropdown li:hover a {
@@ -90,7 +91,7 @@ ul li ul.dropdown li a {
     font-size: 1.2vw;
     /* Font size for dropdown items */
     text-align: left;
-    color:#f1ca68;
+    color: #f1ca68;
     /* Align text to the left for better readability */
 }
 
@@ -105,7 +106,7 @@ nav {
     position: fixed;
     z-index: 10;
     font-weight: bolder;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     /* color: gold; */
 }
 
@@ -144,7 +145,7 @@ nav a:hover {
 }
 
 .search i {
-    color:#f1ca68;
+    color: #f1ca68;
 
     font-size: 1.5vw;
 }
@@ -158,26 +159,26 @@ nav a:hover {
     margin: 3%;
     font-size: 1.2vw;
     color: black;
-    background-color:#f1ca68;
+    background-color: #f1ca68;
     width: 65%;
 }
 
 .search ul.dropdown:hover li #search-input {
     background-color: black;
-    color:#f1ca68;
+    color: #f1ca68;
 }
 
 .search button {
     font-size: 1.2vw;
     margin: 3%;
     padding: 3%;
-    background-color:#f1ca68;
+    background-color: #f1ca68;
     color: black;
 }
 
 .search .dropdown:hover button {
     background-color: black;
-    color:#f1ca68;
+    color: #f1ca68;
 }
 
 /* navbar */
@@ -191,7 +192,7 @@ header {
     height: 100vh;
     width: 100%;
     position: relative;
-    color:#f1ca68;
+    color: #f1ca68;
     border-bottom: solid#f1ca68;
 }
 
@@ -214,7 +215,7 @@ header h3 {
     font-size: 2.5vw;
     margin-top: 2%;
     color: black;
-    background-color:#f1ca68;
+    background-color: #f1ca68;
     font-family: Brush Script MT, Brush Script Std, cursive;
     padding: 1%;
 }
@@ -227,7 +228,7 @@ header h3 {
     font-size: 2em;
     cursor: pointer;
     animation: bounce 2s infinite;
-    color:#f1ca68;
+    color: #f1ca68;
 }
 
 @keyframes bounce {
@@ -278,7 +279,7 @@ header h3 {
     background-color: black;
     /* height: 30vw; */
     overflow: hidden;
-    color:#f1ca68;
+    color: #f1ca68;
     flex-direction: row;
     border: solid#f1ca68;
     /* max-height: 40vw; */
@@ -296,11 +297,13 @@ header h3 {
     text-transform: capitalize;
 
 }
-.our-services h1{
+
+.our-services h1 {
     color: #f1ca68;
     font-size: 4vw;
     margin: 2%;
 }
+
 .more {
     display: none;
     /* max-height: 15vw; */
@@ -309,34 +312,78 @@ header h3 {
     text-align: left;
     margin: 3%;
 }
-.our-services h2{
+
+.our-services h2 {
     font-size: 1.8vw;
 }
-.our-services button{
+
+.our-services button {
     margin: 4%;
     padding: 2%;
     font-size: 1.5vw;
-    background-color:#f1ca68;
+    background-color: #f1ca68;
     border: solid black;
     border-radius: 10px;
 }
-.our-services button a{
+
+.our-services button a {
     text-decoration: none;
     color: black;
     /* margin-bottom: 4%; */
 }
-.our-services button:hover{
+
+.our-services button:hover {
     background-color: #000;
     border: solid#f1ca68;
-    color:#f1ca68;
+    color: #f1ca68;
 }
-.our-services button:hover a{
-    color:#f1ca68;
+
+.our-services button:hover a {
+    color: #f1ca68;
 }
-.more .cta a{
+
+.more .cta a {
     margin: 3%;
     /* font-size: 1vw; */
     /* width: 90%; */
+}
+
+.how-we-work {
+    color: #f1ca68;
+    width: 80%;
+    /* border: solid #f1ca68; */
+    margin: auto;
+    padding: 3%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.how-we-work h1{
+    font-size: 4vw;
+}
+.how-we-work p{
+    font-size: 1.5vw;
+    margin: 3%;
+}
+.how-we-work .work {
+    border: solid #f1ca68;
+    margin: 3%;
+    padding: 2%;
+    text-align: left;
+    width: 38%;
+    display: inline-block;
+    font-size: 1.2vw;
+    height: 35vw;
+    overflow: hidden;
+}
+
+.how-we-work .work p {
+    font-size: 1.4vw;
+    margin: 1.5%;
+    
+
+}
+.work h1{
+    font-size: 3vw;
 }
 /* our services */
 
@@ -365,7 +412,7 @@ header h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color:#f1ca68;
+    color: #f1ca68;
 
 }
 
@@ -405,7 +452,7 @@ header h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color:#f1ca68;
+    color: #f1ca68;
 }
 
 .mission h1 {
@@ -450,7 +497,7 @@ header h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color:#f1ca68;
+    color: #f1ca68;
 }
 
 .vission h1 {
@@ -487,7 +534,7 @@ header h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color:#f1ca68;
+    color: #f1ca68;
 }
 
 .team h1 {
@@ -505,7 +552,7 @@ header h3 {
 
 /* contact us */
 .contact {
-    color:#f1ca68;
+    color: #f1ca68;
     width: 80%;
     margin: auto;
     display: flex;
@@ -529,7 +576,7 @@ header h3 {
 }
 
 .contact a {
-    color:#f1ca68;
+    color: #f1ca68;
 }
 
 .contacts input {
@@ -545,7 +592,7 @@ header h3 {
     margin: 2%;
     width: 60%;
     text-transform: capitalize;
-    background-color:#f1ca68;
+    background-color: #f1ca68;
     color: black;
     font-weight: bolder;
     border: solid black 3px;
@@ -555,7 +602,7 @@ header h3 {
 
 .contacts button:hover {
     background-color: #000;
-    color:#f1ca68;
+    color: #f1ca68;
     font-weight: bolder;
     border: solid 3px#f1ca68;
 }
@@ -578,7 +625,7 @@ header h3 {
 .links h1 a i:hover {
     color: black;
     /* padding: 1%; */
-    background-color:#f1ca68;
+    background-color: #f1ca68;
 }
 
 .get-in-touch p {
@@ -592,7 +639,7 @@ header h3 {
 .why-contact-us {
     text-transform: capitalize;
     font-size: 2vw;
-    color:#f1ca68;
+    color: #f1ca68;
     /* display: flex; */
     width: 73%;
     margin: 0px auto;
@@ -641,7 +688,7 @@ header h3 {
     width: 100%;
     padding: 10px;
     background-color: black;
-    color:#f1ca68;
+    color: #f1ca68;
     border: 2px solid#f1ca68;
     text-align: left;
     cursor: pointer;
@@ -661,7 +708,7 @@ header h3 {
     display: none;
     padding: 10px;
     background-color: #161515;
-    color:#f1ca68;
+    color: #f1ca68;
     letter-spacing: 1px;
     border: black;
     border-top: none;
@@ -670,7 +717,7 @@ header h3 {
 }
 
 .faq h1 {
-    color:#f1ca68;
+    color: #f1ca68;
     text-align: center;
     margin: 2%;
     font-size: 4vw;
@@ -679,7 +726,7 @@ header h3 {
 }
 
 .faq a {
-    color:#f1ca68;
+    color: #f1ca68;
     text-decoration: underline;
 }
 
@@ -713,12 +760,12 @@ header h3 {
 /* <!-- our success stories --> */
 .our-success-stories {
     text-transform: capitalize;
-    color:#f1ca68;
+    color: #f1ca68;
     width: 83%;
     margin: auto;
     padding: 3%;
     border: solid#f1ca68;
- margin-top: 5%;
+    margin-top: 5%;
 }
 
 .our-success-stories h1 {
@@ -757,12 +804,12 @@ header h3 {
 
 /* <!-- client testimonal --> */
 .client-testimonal {
-    color:#f1ca68;
+    color: #f1ca68;
     width: 83%;
     margin: auto;
     padding: 3%;
     border: solid#f1ca68;
-margin-top: 5%;
+    margin-top: 5%;
 }
 
 .client-testimonal h1 {
@@ -786,7 +833,7 @@ margin-top: 5%;
 
 /* <!-- why choose us? --> */
 .why-choose-us {
-    color:#f1ca68;
+    color: #f1ca68;
     width: 83%;
     margin: auto;
     padding: 3%;
@@ -816,7 +863,7 @@ margin-top: 5%;
     /* margin-top: 3%; */
     font-size: 1.5vw;
     text-transform: capitalize;
-    background-color:#f1ca68;
+    background-color: #f1ca68;
     font-weight: bold;
     border: solid;
     /* color: #000; */
@@ -828,12 +875,12 @@ margin-top: 5%;
 
 .why-choose-us button:hover {
     background-color: black;
-    border:#f1ca68 solid;
+    border: #f1ca68 solid;
     /* color:#f1ca68; */
 }
 
 .why-choose-us button:hover a {
-    color:#f1ca68;
+    color: #f1ca68;
 
 }
 

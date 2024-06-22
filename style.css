@@ -1,6 +1,8 @@
 /* Resetting margins and padding for all elements */
 @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+MX:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +17,22 @@ html {
 
 body {
     background-color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 nav {
     background-color: black;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #f1ca68;
+    float: right;
+    display: block;
 }
 
 /* Styling the main navigation links */
@@ -55,12 +69,12 @@ nav ul li ul.dropdown {
 }
 
 /* Displaying the dropdown menu on hover */
-ul li:hover ul.dropdown {
+/* ul li:hover ul.dropdown {
     /* margin-bottom: solid; */
-    display: block;
+/* display: block;
     color: #f1ca68;
 
-}
+} */
 
 /* Styling the individual items within the dropdown menu */
 ul li ul.dropdown li {
@@ -150,6 +164,15 @@ nav a:hover {
     font-size: 1.5vw;
 }
 
+#suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#suggestions-list li:hover {
+    background: #f0f0f0;
+}
+
 .highlight {
     background-color: gold;
 }
@@ -180,6 +203,56 @@ nav a:hover {
     background-color: black;
     color: #f1ca68;
 }
+
+/* Styling the dropdown menu */
+nav ul li ul.dropdown {
+    position: absolute;
+    /* Position relative to parent li */
+    z-index: 999;
+    /* Ensure dropdowns are above other content */
+    display: none;
+    /* Hide dropdowns by default */
+    background-color: black;
+    border: solid 1px #000;
+    min-width: 20rem;
+    /* Minimum width to fit content */
+    padding: 1rem 0;
+    /* Padding for dropdown items */
+}
+
+/* Show dropdown when it has 'show' class */
+nav ul li ul.dropdown.show {
+    display: block;
+}
+
+/* Styling the individual items within the dropdown menu */
+ul li ul.dropdown li {
+    display: block;
+    /* Display items as block to stack vertically */
+}
+
+/* Hover effect on dropdown items */
+ul li ul.dropdown li:hover {
+    background-color: #f1ca68;
+    color: black;
+}
+
+/* Styling anchor tags within dropdown */
+ul li ul.dropdown li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2vw;
+    color: #f1ca68;
+    text-decoration: none;
+}
+
+/* Hover effect on anchor tags within dropdown */
+ul li ul.dropdown li:hover a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 
 /* navbar */
 
@@ -357,13 +430,16 @@ header h3 {
     text-align: center;
     text-transform: capitalize;
 }
-.how-we-work h1{
+
+.how-we-work h1 {
     font-size: 4vw;
 }
-.how-we-work p{
+
+.how-we-work p {
     font-size: 1.5vw;
     margin: 3%;
 }
+
 .how-we-work .work {
     border: solid #f1ca68;
     margin: 3%;
@@ -379,12 +455,14 @@ header h3 {
 .how-we-work .work p {
     font-size: 1.4vw;
     margin: 1.5%;
-    
+
 
 }
-.work h1{
+
+.work h1 {
     font-size: 3vw;
 }
+
 /* our services */
 
 /* <!-- how we work? --> */
@@ -650,6 +728,10 @@ header h3 {
 
 }
 
+.why-choose-us h1.main {
+    font-size: 2.3vw;
+}
+
 .why-contact-us ul {
     text-align: left;
     margin: 2%;
@@ -892,3 +974,96 @@ header h3 {
 /* <!-- why choose us? --> */
 
 /* portfolio */
+
+/* footer */
+footer {
+    width: 100%;
+    color: #f1ca68;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    border-top: solid #f1ca68;
+}
+
+.footer {
+    width: 30%;
+    margin: 1.2%;
+    margin-top: 3%;
+    /* display: flex; */
+    /* border: solid white; */
+}
+
+footer .one img {
+    width: 80%;
+}
+
+footer .three img {
+    width: 90%;
+    padding: 5%;
+}
+
+footer .three p {
+    display: inline-block;
+    width: 40%;
+    margin: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    /* border: #e8e8e8 solid; */
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+footer h1 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2%;
+}
+
+footer .one img {
+    padding: 10%;
+}
+
+footer .two li {
+    font-size: 2vw;
+    margin: 5%;
+}
+
+footer .two a:hover {
+    margin-left: 10px;
+}
+
+footer .two ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .two li {
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+}
+
+footer .two li i {
+    margin-right: 8px;
+    /* Add space between the icon and the link */
+}
+
+footer .two li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.8vw;
+}
+
+footer .two h1 {
+    font-size: 2.5vw;
+}
+
+footer .two #copyright {
+    font-size: 1.8vw;
+    margin: 5%;
+    margin-top: 8%;
+}
+
+/* footer */

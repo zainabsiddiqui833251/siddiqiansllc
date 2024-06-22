@@ -1,0 +1,364 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 45%;
+    }
+
+    /* about */
+
+    .about-us .one,
+    .our-mission .two,
+    .our-vision .one,
+    .our-team .two {
+        display: none;
+        /* background-image: url(./img/about.jpg); */
+    }
+
+    .about-us .two,
+    .our-vision .two,
+    .our-mission .one,
+    .our-team .one {
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+    }
+
+    .about-us .two::before,
+    .our-vision .two::before,
+    .our-mission .one::before,
+    .our-team .one::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: url(./img/about.jpg) no-repeat center center; */
+        background-size: cover;
+        opacity: 0.6;
+        /* Adjust the opacity here */
+        z-index: -1;
+        /* Ensure the pseudo-element is behind the content */
+
+    }
+
+    .about-us .two {
+        background: url(./img/about.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .our-vision .two {
+        background: url(./img/vision.jpg) no-repeat center center;
+        background-size: cover;
+
+    }
+
+    .our-mission .one {
+        background: url(./img/mission.jpg) no-repeat center center;
+        background-size: cover;
+
+    }
+
+    .our-team .one {
+        background: url(./img/team.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .about-us .two p,
+    .about-us .two h1,
+    .our-vision .two p,
+    .our-vision .two h1,
+    .our-mission .one p,
+    .our-mission .one ul,
+    .our-mission .one h1,
+    .our-team .one p,
+    .our-team .one h1 {
+        position: relative;
+        z-index: 1;
+        /* Ensure the text is above the pseudo-element */
+        /* color: white; Example text color */
+        font-size: 4vw;
+        background-color: hsla(0, 1%, 49%, 0.836);
+        padding: 3%;
+        line-height: 1.4em;
+        /* color: black; */
+    }
+
+    .our-mission .one ul {
+        padding: 3%;
+        line-height: 1.4em;
+        margin: 10%;
+
+    }
+
+    .our-mission .one ul li h3 {
+        font-size: 3vw;
+
+    }
+
+    /* about */
+
+    /* footer */
+    footer {
+        display: block;
+
+    }
+
+    footer .one,
+    .two,
+    .three {
+        width: 80%;
+        margin: auto;
+        /* font-size:3vw ; */
+        margin-top: 5%;
+    }
+
+    footer .two h1,
+    footer .two ul li i {
+        font-size: 5vw;
+    }
+
+    footer .two ul li a {
+        font-size: 4vw;
+    }
+
+    footer .two h1#copyright {
+        font-size: 4vw;
+    }
+
+    footer .three {
+        font-size: 3vw;
+    }
+
+    footer .three p {
+        font-size: 3vw;
+    }
+
+    /* footer */
+
+    /* services */
+    .service {
+        width: 80%;
+        font-size: 4vw;
+        padding: 5%;
+        margin-top: 5%;
+    }
+
+    .service .more span {
+        margin: 3%;
+        font-size: 6vw;
+
+    }
+
+    .service button {
+        width: 60%;
+        font-size: 5vw;
+        padding: 3%;
+    }
+
+    .service .cta {
+        width: 100%;
+        /* margin-top: 5%; */
+        margin: auto;
+        margin-top: 5%;
+
+    }
+
+    .our-services h1 {
+        font-size: 5vw;
+    }
+
+    .service h2 {
+        font-size: 5vw;
+    }
+
+    .service .more span,
+    ul li {
+        font-size: 4vw;
+        line-height: 1.4em;
+    }
+
+    .how-we-work .work {
+        /* font-size: 4vw; */
+        /* line-height: 1.4em; */
+        /* padding: 3%; */
+        display: block;
+        width: 95%;
+        margin: auto;
+        margin-top: 5%;
+        height: auto;
+    }
+
+    .how-we-work h1 {
+        font-size: 5vw;
+        margin: 2%;
+    }
+
+    .how-we-work p {
+        font-size: 4vw;
+        line-height: 1.4em;
+    }
+
+    .how-we-work .work p {
+        font-size: 4vw;
+
+    }
+
+    .how-we-work .work h2 {
+        font-size: 5vw;
+        margin: 3%;
+        text-decoration: underline;
+    }
+
+    /* services */
+
+    /* portfolio */
+    .our-success-stories h1,
+    .client-testimonal h1,
+    .why-choose-us h1 {
+        font-size: 6vw;
+    }
+
+    .our-success-stories h2 {
+        font-size: 4vw;
+    }
+
+    .our-success-stories p,
+    .client-testimonal p,
+    .why-choose-us p {
+        font-size: 4vw;
+    }
+
+    .our-success-stories span {
+        font-size: 5vw;
+    }
+
+    .why-choose-us button {
+        width: 60%;
+        font-size: 4vw;
+
+    }
+
+
+    /* portfolio */
+
+    /* contact  */
+    .contact {
+        display: block;
+
+
+    }
+
+    .contacts {
+        width: 90%;
+        margin: auto;
+        padding: 4%;
+    }
+
+    .contact .form h1 {
+        font-size: 6vw;
+
+    }
+
+    .contact .form label {
+        font-size: 4vw;
+    }
+
+    .contact .form input {
+        font-size: 4vw;
+    }
+
+    .contact .form p {
+        font-size: 4vw;
+    }
+
+    .contact .form button {
+        font-size: 4vw;
+    }
+    
+    .contact .links{
+margin-top: 10%;
+    }
+    .contact .get-in-touch h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .contact .get-in-touch p {
+        font-size: 3vw;
+        /* text-align: center; */
+    }
+
+    .contact .get-in-touch h2 {
+        font-size: 4vw;
+        text-decoration: underline;
+        margin: 3%;
+        /* text-align: center; */
+    }
+
+    .connect-with-us h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .connect-with-us .link {
+        font-size: 5vw;
+        justify-content: center;
+
+    }
+
+    .contacts .links {
+        margin-top: 10%;
+    }
+
+    .why-contact-us h1 {
+        font-size: 4vw;
+    }
+
+    .why-contact-us .main {
+        font-size: 5vw;
+    }
+
+    .why-contact-us span {
+        font-size: 3vw;
+    }
+
+
+    /* contact  */
+
+
+    /* faqs */
+    .questions {
+        width: 90%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .questions h1{
+        font-size: 6vw;
+    }
+
+    .questions .faq .accordian {
+        width: 100%;
+
+    }
+
+    .accordion-button {
+        font-size: 4vw;
+    }
+
+    .accordion-content {
+        font-size: 4vw;
+    }
+
+    /* faqs */
+    header{
+        height: 100vh;
+    }
+}

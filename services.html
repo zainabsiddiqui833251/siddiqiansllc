@@ -28,7 +28,7 @@
 
         <div class="links">
             <ul>
-                <li><a href="">about <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href=""  onclick="showdropdown(event)">about <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="about.html#about-us">about us</a></li>
@@ -39,7 +39,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">services <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">services <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="#services">our services</a></li>
@@ -50,7 +50,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">portfolio <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">portfolio <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
 
@@ -63,7 +63,7 @@
 
                 </li>
 
-                <li><a href="">contact <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">contact <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="contact.html#get-in-touch">get in touch</a></li>
@@ -74,7 +74,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">faqs <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">faqs <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="faqs.html#general">general questions</a></li>
@@ -105,6 +105,9 @@
                 </li>
             </ul>
         </div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
     <!-- navbar -->
 
@@ -327,6 +330,47 @@
     </div>
     <!-- how we work? -->
 
+        <!-- footer -->
+        <footer>
+            <div class="footer one">
+                <img src="./img/siddiqians-llc-high-resolution-logo-transparent (1).png" alt="">
+            </div>
+            <div class="footer two">
+                <h1>quick links</h1>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="about.html">about us</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="services.html">our services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="portfolio.html">our portfolio</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="contact.html">contact us</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="faqs.html">fAQs</a></li>
+                </ul>
+    
+                <h1 id="copyright"><i class="fa-regular fa-copyright"></i> 2024 zainabsiddiqui All Rights Reserved</h1>
+                
+            </div>
+            <div class="footer three">
+                <h1>connect with us</h1>
+                <p>
+                    <img src="./img/qrcode.png" alt="">
+                    <br>linkedIn
+                </p>
+                <p>
+                    <img src="./img/qrcode (1).png" alt="">
+                    <br> facebook
+                </p>
+                <p>
+                    <img src="./img/qrcode (2).png" alt="">
+                    <br>instagram
+                </p>
+                <p>
+                    <img src="./img/qrcode.png" alt="">
+                    <br>whatsapp
+                </p>
+            </div>
+    
+        </footer>
+        <!-- footer -->
+    
     <!-- aos js links -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

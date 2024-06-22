@@ -28,7 +28,7 @@
 
         <div class="links">
             <ul>
-                <li><a href="">about <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href=""  onclick="showdropdown(event)">about <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="about.html#about-us">about us</a></li>
@@ -39,7 +39,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">services <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href=""  onclick="showdropdown(event)">services <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="services.html#services">our services</a></li>
@@ -50,9 +50,9 @@
                     </ul>
 
                 </li>
-                <li><a href="">portfolio <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">portfolio <i class="fa-solid fa-caret-down"></i></a>
 
-                  
+
                     <ul class="dropdown">
                         <li><a href="portfolio.html#our-success-stories">our success stories</a></li>
                         <!-- <li><a href="">results acheived</a></li>                        -->
@@ -62,7 +62,7 @@
 
                 </li>
 
-                <li><a href="">contact <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">contact <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown">
                         <li><a href="contact.html#get-in-touch">get in touch</a></li>
                         <li><a href="contact.html#form">contact us</a></li>
@@ -72,7 +72,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">faqs <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">faqs <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="#general">general questions</a></li>
@@ -103,6 +103,9 @@
                 </li>
             </ul>
         </div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
     <!-- navbar -->
 
@@ -185,183 +188,232 @@
 
             </div>
             <!-- product-hunting -->
-
-            <!-- product-sourcing -->
-            <div id="product-sourcing" class="faq product-sourcing">
-                <h1>product sourcing</h1>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-button">Q: How do you ensure the quality of sourced products? <i
-                                class="fa-solid fa-angle-down"></i></button>
-                        <div class="accordion-content">
-                            <p>A: We connect with verified suppliers and manufacturers globally, conduct rigorous
-                                quality assessments, and negotiate competitive pricing. We also handle sample analysis
-                                to ensure that the products meet your quality standards.
-                            </p>
-                        </div>
+        </div>
+        <!-- product-sourcing -->
+        <div id="product-sourcing" class="faq product-sourcing">
+            <h1>product sourcing</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: How do you ensure the quality of sourced products? <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div class="accordion-content">
+                        <p>A: We connect with verified suppliers and manufacturers globally, conduct rigorous
+                            quality assessments, and negotiate competitive pricing. We also handle sample analysis
+                            to ensure that the products meet your quality standards.
+                        </p>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-button">Q: Do you manage logistics and shipping? <i
-                                class="fa-solid fa-angle-down"></i></button>
-                        <div class="accordion-content">
-                            <p>A: Yes, we handle the entire sourcing process, including logistics and shipping. We
-                                ensure timely delivery to your warehouse or Amazon’s fulfillment centers, optimizing the
-                                supply chain for efficiency and cost-effectiveness.
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- product-sourcing -->
-
-                <!-- listing-optimization -->
-                <div id="listing-optimization" class="faq listing-optimization">
-                    <h1>listing optimization</h1>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                            <button class="accordion-button">Q: What is included in your listing optimization
-                                service? <i class="fa-solid fa-angle-down"></i></button>
-                            <div class="accordion-content">
-                                <p>? A: Our listing optimization service includes keyword research, product title
-                                    enhancement, bullet points and description optimization, and high-quality image
-                                    selection. We aim to improve your product’s visibility and conversion rates on
-                                    Amazon.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <button class="accordion-button">Q: How do you improve my product's search ranking? <i
-                                    class="fa-solid fa-angle-down"></i>
-                            </button>
-                            <div class="accordion-content">
-                                <p>A: We incorporate relevant keywords and compelling content into your product
-                                    listings, optimizing them for Amazon's search algorithm. This increases your
-                                    product's visibility and helps it rank higher in search results.
-                                </p>
-                            </div>
-                        </div>
-
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: Do you manage logistics and shipping? <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div class="accordion-content">
+                        <p>A: Yes, we handle the entire sourcing process, including logistics and shipping. We
+                            ensure timely delivery to your warehouse or Amazon’s fulfillment centers, optimizing the
+                            supply chain for efficiency and cost-effectiveness.
+                        </p>
                     </div>
-                    <!-- listing-optimization -->
+                </div>
 
-                    <!-- ppc-ads-management -->
-                    <div id="ppc-ads-management" class="faq ppc-ads-management">
-                        <h1>PPC ads management</h1>
-                        <div class="accordion">
-                            <div class="accordion-item">
-                                <button class="accordion-button">Q: How do you manage PPC campaigns on Amazon? <i
-                                        class="fa-solid fa-angle-down"></i></button>
-                                <div class="accordion-content">
-                                    <p>A: We create and manage targeted pay-per-click campaigns, optimize bids, select
-                                        the right keywords, and continuously monitor and adjust campaigns for optimal
-                                        performance. Our goal is to maximize your ROI by driving relevant traffic to
-                                        your listings.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <button class="accordion-button">Q: What kind of results can I expect from your PPC
-                                    management service? <i class="fa-solid fa-angle-down"></i> </button>
-                                <div class="accordion-content">
-                                    <p>Our PPC management service is designed to increase your product’s visibility,
-                                        drive higher traffic, and improve conversion rates. We focus on optimizing ad
-                                        spend to ensure maximum return on investment.
-                                    </p>
-                                </div>
-                            </div>
+            </div>
+            <!-- product-sourcing -->
+        </div>
+        <!-- listing-optimization -->
+        <div id="listing-optimization" class="faq listing-optimization">
+            <h1>listing optimization</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: What is included in your listing optimization
+                        service? <i class="fa-solid fa-angle-down"></i></button>
+                    <div class="accordion-content">
+                        <p>? A: Our listing optimization service includes keyword research, product title
+                            enhancement, bullet points and description optimization, and high-quality image
+                            selection. We aim to improve your product’s visibility and conversion rates on
+                            Amazon.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: How do you improve my product's search ranking? <i
+                            class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>A: We incorporate relevant keywords and compelling content into your product
+                            listings, optimizing them for Amazon's search algorithm. This increases your
+                            product's visibility and helps it rank higher in search results.
+                        </p>
+                    </div>
+                </div>
 
-                        </div>
-                        <!-- ppc-ads-management -->
+            </div>
+        </div>
+        <!-- listing-optimization -->
 
-                        <!-- inventory-method -->
-                        <div id="inventory-method" class=" faq inventory-method">
-                            <h1>inventory method</h1>
-                            <div class="accordion">
-                                <div class="accordion-item">
-                                    <button class="accordion-button">Q: How do you handle inventory management?
-                                        <i class="fa-solid fa-angle-down"></i></button>
-                                    <div class="accordion-content">
-                                        <p>A: Our inventory management service includes real-time tracking, automated
-                                            reordering, and comprehensive analysis to maintain optimal stock levels. We
-                                            help you streamline inventory processes, reduce storage costs, and prevent
-                                            stockouts.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <button class="accordion-button">Q: Can you integrate with my existing inventory
-                                        systems? <i class="fa-solid fa-angle-down"></i></button>
-                                    <div class="accordion-content">
-                                        <p>A: Yes, we can integrate with your existing inventory systems to provide
-                                            seamless management and real-time updates. Our goal is to enhance your
-                                            current processes and ensure efficient inventory control.</p>
-                                    </div>
-                                </div>
+        <!-- ppc-ads-management -->
+        <div id="ppc-ads-management" class="faq ppc-ads-management">
+            <h1>PPC ads management</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: How do you manage PPC campaigns on Amazon? <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div class="accordion-content">
+                        <p>A: We create and manage targeted pay-per-click campaigns, optimize bids, select
+                            the right keywords, and continuously monitor and adjust campaigns for optimal
+                            performance. Our goal is to maximize your ROI by driving relevant traffic to
+                            your listings.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: What kind of results can I expect from your PPC
+                        management service? <i class="fa-solid fa-angle-down"></i> </button>
+                    <div class="accordion-content">
+                        <p>Our PPC management service is designed to increase your product’s visibility,
+                            drive higher traffic, and improve conversion rates. We focus on optimizing ad
+                            spend to ensure maximum return on investment.
+                        </p>
+                    </div>
+                </div>
 
-                            </div>
-                            <!-- inventory-method -->
+            </div>
+        </div>
+        <!-- ppc-ads-management -->
 
-                            <!-- miscellaneous -->
-                            <div id="micellaneous" class="faq micellaneous">
-                                <h1>miscellaneous</h1>
-                                <div class="accordion">
-                                    <div class="accordion-item">
-                                        <button class="accordion-button">Q: What are your pricing structures? <i
-                                                class="fa-solid fa-angle-down"></i></button>
-                                        <div class="accordion-content">
-                                            <p>A: Our pricing structures vary depending on the specific services and
-                                                scope of work required. We offer competitive and transparent pricing
-                                                tailored to your business needs. Please <a href="contact.html">contact
-                                                    us <i class="fa-solid fa-up-right-from-square"></i></a> for a
-                                                detailed quote.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <button class="accordion-button">Q: How do you ensure customer satisfaction? <i
-                                                class="fa-solid fa-angle-down"></i>
-                                        </button>
-                                        <div class="accordion-content">
-                                            <p>A: Customer satisfaction is our top priority. We maintain clear
-                                                communication, provide regular updates, and offer flexible solutions to
-                                                meet your needs. Our success is measured by your satisfaction and
-                                                business growth.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <button class="accordion-button">Q: How can I contact Siddiqians LLC for further
-                                            questions? <i class="fa-solid fa-angle-down"></i> </button>
-                                        <div class="accordion-content">
-                                            <p>A: You can <a href="contact.html">contact us <i
-                                                        class="fa-solid fa-up-right-from-square"></i></a> through our
-                                                website, email us at
-                                                your-email@example.com, or call us at [your-phone-number]. We're here to
-                                                assist you with any questions or concerns you may have.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- miscellaneous -->
-                            </div>
+        <!-- inventory-method -->
+        <div id="inventory-method" class=" faq inventory-method">
+            <h1>inventory method</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: How do you handle inventory management?
+                        <i class="fa-solid fa-angle-down"></i></button>
+                    <div class="accordion-content">
+                        <p>A: Our inventory management service includes real-time tracking, automated
+                            reordering, and comprehensive analysis to maintain optimal stock levels. We
+                            help you streamline inventory processes, reduce storage costs, and prevent
+                            stockouts.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: Can you integrate with my existing inventory
+                        systems? <i class="fa-solid fa-angle-down"></i></button>
+                    <div class="accordion-content">
+                        <p>A: Yes, we can integrate with your existing inventory systems to provide
+                            seamless management and real-time updates. Our goal is to enhance your
+                            current processes and ensure efficient inventory control.</p>
+                    </div>
+                </div>
 
-                            <!-- questions -->
+            </div>
+        </div>
+        <!-- inventory-method -->
 
-                            <!-- aos js links -->
-                            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                            <script>
-                                AOS.init(
-                                    {
-                                        offset: 300,
-                                        duration: 300,
-                                        easing: 'ease-in-out',
-                                        // delay: 300,
-                                    }
-                                );
-                            </script>
-                            <!-- aos links -->
+        <!-- miscellaneous -->
+        <div id="micellaneous" class="faq micellaneous">
+            <h1>miscellaneous</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: What are your pricing structures? <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div class="accordion-content">
+                        <p>A: Our pricing structures vary depending on the specific services and
+                            scope of work required. We offer competitive and transparent pricing
+                            tailored to your business needs. Please <a href="contact.html">contact
+                                us <i class="fa-solid fa-up-right-from-square"></i></a> for a
+                            detailed quote.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: How do you ensure customer satisfaction? <i
+                            class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>A: Customer satisfaction is our top priority. We maintain clear
+                            communication, provide regular updates, and offer flexible solutions to
+                            meet your needs. Our success is measured by your satisfaction and
+                            business growth.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Q: How can I contact Siddiqians LLC for further
+                        questions? <i class="fa-solid fa-angle-down"></i> </button>
+                    <div class="accordion-content">
+                        <p>A: You can <a href="contact.html">contact us <i
+                                    class="fa-solid fa-up-right-from-square"></i></a> through our
+                            website, email us at
+                            your-email@example.com, or call us at [your-phone-number]. We're here to
+                            assist you with any questions or concerns you may have.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- miscellaneous -->
+        </div>
+    </div>
+    <!-- questions -->
 
-                            <!-- javascript link -->
-                            <script src="app.js"></script>
-                            <!-- javascript link -->
+    <!-- footer -->
+    <footer style="width: 100%;">
+        <div class="footer one">
+            <img src="./img/siddiqians-llc-high-resolution-logo-transparent (1).png" alt="">
+        </div>
+        <div class="footer two">
+            <h1>quick links</h1>
+            <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="about.html">about us</a>
+                </li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="services.html">our
+                        services</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="portfolio.html">our
+                        portfolio</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="contact.html">contact us</a>
+                </li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="faqs.html">fAQs</a></li>
+            </ul>
+
+            <h1 id="copyright"><i class="fa-regular fa-copyright"></i> 2024 zainabsiddiqui All
+                Rights Reserved</h1>
+
+        </div>
+        <div class="footer three">
+            <h1>connect with us</h1>
+            <p>
+                <img src="./img/qrcode.png" alt="">
+                <br>linkedIn
+            </p>
+            <p>
+                <img src="./img/qrcode (1).png" alt="">
+                <br> facebook
+            </p>
+            <p>
+                <img src="./img/qrcode (2).png" alt="">
+                <br>instagram
+            </p>
+            <p>
+                <img src="./img/qrcode.png" alt="">
+                <br>whatsapp
+            </p>
+        </div>
+
+    </footer>
+    <!-- footer -->
+
+    <!-- aos js links -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 300,
+                duration: 300,
+                easing: 'ease-in-out',
+                // delay: 300,
+            }
+        );
+    </script>
+    <!-- aos links -->
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+    <!-- javascript link -->
 
 
 </body>

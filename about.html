@@ -24,11 +24,12 @@
                 <img src="./img/siddiqians-llc-high-resolution-logo-transparent (1).png" style="width: 100%;" alt="">
             </a>
         </div>
+
         <!-- links div -->
 
         <div class="links">
             <ul>
-                <li><a href="">about <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">about <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="#about-us">about us</a></li>
@@ -39,7 +40,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">services <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">services <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="services.html#services">our services</a></li>
@@ -50,7 +51,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">portfolio <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">portfolio <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="portfolio.html#our-success-stories">our success stories</a></li>
@@ -60,8 +61,8 @@
                     </ul>
 
                 </li>
-          
-                <li><a href="">contact <i class="fa-solid fa-caret-down"></i></a>
+
+                <li><a href="" onclick="showdropdown(event)">contact <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="contact.html#get-in-touch">get in touch</a></li>
@@ -72,7 +73,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">faqs <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">faqs <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="faqs.html#general">general questions</a></li>
@@ -95,6 +96,7 @@
             <ul>
                 <li><i class="fa-solid fa-magnifying-glass"></i>
                     <ul class="dropdown" style="transform: translateX(-95%);margin: 3%;min-width: 40rem;">
+
                         <li>
                             <input type="search" class="search" placeholder="Search" id="search-input">
                             <button type="button" class="searchbtn" onclick="performSearch()">Search</button>
@@ -103,6 +105,9 @@
                 </li>
             </ul>
         </div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
     <!-- navbar -->
 
@@ -110,7 +115,8 @@
     <header>
         <h1 style="font-size: 8vw;">about us</h1>
         <h3>"Your Partner in Digital Growth"</h3>
-        <div class="arrow-down" onclick="scrollToNextSection()"><a href="#about-us" style="font-size: 5vw;color: goldenrod;">↓</a></div>
+        <div class="arrow-down" onclick="scrollToNextSection()"><a href="#about-us"
+                style="font-size: 5vw;color: goldenrod;">↓</a></div>
     </header>
     <!-- header -->
 
@@ -183,7 +189,7 @@
 
     <!-- our team -->
     <div class="our-team" id="our-team">
-        <div class="team">
+        <div class="team one">
             <h1>our team</h1>
             <p>Our team of passionate experts is dedicated to helping you achieve your Amazon business goals. With
                 diverse backgrounds in e-commerce, marketing, and logistics, we bring a wealth of knowledge and
@@ -191,12 +197,53 @@
             </p>
 
         </div>
-        <div class="team" style="background-image: url(./img/team.webp);">
+        <div class="team two" style="background-image: url(./img/team.webp);">
 
         </div>
 
     </div>
     <!-- our team -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer one">
+            <img src="./img/siddiqians-llc-high-resolution-logo-transparent (1).png" alt="">
+        </div>
+      
+        <div class="footer three">
+            <h1>connect with us</h1>
+            <p>
+                <img src="./img/qrcode.png" alt="">
+                <br>linkedIn
+            </p>
+            <p>
+                <img src="./img/qrcode (1).png" alt="">
+                <br> facebook
+            </p>
+            <p>
+                <img src="./img/qrcode (2).png" alt="">
+                <br>instagram
+            </p>
+            <p>
+                <img src="./img/qrcode.png" alt="">
+                <br>whatsapp
+            </p>
+        </div>
+        <div class="footer two">
+            <h1>quick links</h1>
+            <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="about.html">about us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="services.html">our services</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="portfolio.html">our portfolio</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="contact.html">contact us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="faqs.html">fAQs</a></li>
+            </ul>
+
+            <h1 id="copyright"><i class="fa-regular fa-copyright"></i> 2024 zainabsiddiqui All Rights Reserved</h1>
+
+        </div>
+    </footer>
+    <!-- footer -->
 
     <!-- aos js links -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

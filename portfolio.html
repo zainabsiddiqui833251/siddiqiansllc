@@ -28,7 +28,7 @@
 
         <div class="links">
             <ul>
-                <li><a href="">about <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">about <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="about.html#about-us">about us</a></li>
@@ -39,7 +39,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">services <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">services <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="services.html#services">our services</a></li>
@@ -50,7 +50,7 @@
                     </ul>
 
                 </li>
-                <li><a href="">portfolio <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">portfolio <i class="fa-solid fa-caret-down"></i></a>
 
                     <ul class="dropdown">
                         <li><a href="#our-success-stories">our success stories</a></li>
@@ -61,9 +61,9 @@
 
                 </li>
 
-                <li><a href="">contact <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">contact <i class="fa-solid fa-caret-down"></i></a>
 
-                    
+
                     <ul class="dropdown">
                         <li><a href="contact.html#get-in-touch">get in touch</a></li>
                         <li><a href="contact.html#form">contact us</a></li>
@@ -73,9 +73,9 @@
                     </ul>
 
                 </li>
-                <li><a href="">faqs <i class="fa-solid fa-caret-down"></i></a>
+                <li><a href="" onclick="showdropdown(event)">faqs <i class="fa-solid fa-caret-down"></i></a>
 
-                  
+
                     <ul class="dropdown">
                         <li><a href="faqs.html#general">general questions</a></li>
                         <li><a href="faqs.html#product-hunting">product hunting</a></li>
@@ -105,6 +105,9 @@
                 </li>
             </ul>
         </div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
     <!-- navbar -->
 
@@ -119,20 +122,21 @@
 
     <!-- images collage -->
     <div class="images" id="collage">
-        <div class="img one" style="background-image: url(./img/IMG-20240614-WA0013.jpg);height: 30vw;width: 64%;">
+        <div class="img one" style="background-image: url(./img/IMG-20240614-WA0013.jpg);height: 30vw;width: 60%;">
         </div>
-        <div class="img two" style="background-image: url(./img/IMG-20240614-WA0014.jpg);height: 30vw;width: 34.5%;">
+        <div class="img two" style="background-image: url(./img/IMG-20240614-WA0014.jpg);height: 30vw;width: 30%;">
         </div>
-        <div class="img three" style="background-image: url(./img/IMG-20240614-WA0015.jpg);height: 32vw;width: 49%;">
+        <div class="img three" style="background-image: url(./img/IMG-20240614-WA0015.jpg);height: 32vw;width: 45%;">
         </div>
-        <div class="img four" style="background-image: url(./img/IMG-20240614-WA0016.jpg);height: 32vw;width: 49%;">
+        <div class="img four" style="background-image: url(./img/IMG-20240614-WA0016.jpg);height: 32vw;width: 45%;">
         </div>
-        <div class="img five" style="background-image: url(./img/IMG-20240614-WA0017.jpg);height: 34vw;width: 39%;">
+        <div class="img five" style="background-image: url(./img/IMG-20240614-WA0017.jpg);height: 34vw;width: 35%;">
         </div>
-        <div class="img six" style="background-image: url(./img/IMG-20240614-WA0018.jpg);height: 34vw;width: 59%;">
+        <div class="img six" style="background-image: url(./img/IMG-20240614-WA0018.jpg);height: 34vw;width: 55%;">
         </div>
-
     </div>
+
+
     <!-- images collage -->
 
     <!-- our success stories -->
@@ -143,7 +147,7 @@
             capability in product hunting, sourcing, and listing optimization.</p>
         <h2>product:: Smartphone Stand - A versatile and adjustable stand for smartphones and tablets.
         </h2>
-        <h2>process</h2>
+        <h1>process</h1>
         <p><span>product analysis</span> <br> 1.Conducted market research to identify a gap in the Canadian market for
             high-quality smartphone stands.
             <br>2.Utilized tools like Jungle Scout and Helium 10 for data-driven insights.
@@ -194,7 +198,7 @@
         </p>
         <!-- <p><span></span><br>1.</p> -->
         <br>
-        <h2>results:</h2>
+        <h1>results:</h1>
         <p><span>Sales Growth: </span>Achieved a 200% increase in sales within the first three months.
         </p>
         <p><span>High ROI: </span>Delivered a 50% return on investment within six months.
@@ -214,7 +218,7 @@
 
     <!-- client testimonal -->
     <div class="client-testimonal" id="client-testimonal">
-        <h1>client testimonal</h1>
+        <h1>client testimonial</h1>
         <p><q>Siddiqians LLC helped us seamlessly launch our product in Canada. Their thorough market analysis and
                 expert optimization strategies were key to our success.</q>-Jane Doe, CEO of Tech Innovations</p>
 
@@ -232,24 +236,48 @@
     </div>
     <!-- why choose us? -->
 
+    <!-- footer -->
+    <footer>
+        <div class="footer one">
+            <img src="./img/siddiqians-llc-high-resolution-logo-transparent (1).png" alt="">
+        </div>
+        <div class="footer two">
+            <h1>quick links</h1>
+            <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="about.html">about us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="services.html">our services</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="portfolio.html">our portfolio</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="contact.html">contact us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="faqs.html">fAQs</a></li>
+            </ul>
 
-    <!-- our work -->
-    <div class="our-work">
+            <h1 id="copyright"><i class="fa-regular fa-copyright"></i> 2024 zainabsiddiqui All Rights Reserved</h1>
 
-    </div>
-    <!-- our work -->
+        </div>
+        <div class="footer three">
+            <h1>connect with us</h1>
+            <p>
+                <img src="./img/qrcode.png" alt="">
+                <br>linkedIn
+            </p>
+            <p>
+                <img src="./img/qrcode (1).png" alt="">
+                <br> facebook
+            </p>
+            <p>
+                <img src="./img/qrcode (2).png" alt="">
+                <br>instagram
+            </p>
+            <p>
+                <img src="./img/qrcode.png" alt="">
+                <br>whatsapp
+            </p>
+        </div>
 
-    <!-- before and after optimization  -->
-    <div class="before-and-after-optimization">
+    </footer>
+    <!-- footer -->
 
-    </div>
-    <!-- before and after optimization  -->
 
-    <!-- results acheived  -->
-    <div class="results-acheived">
-
-    </div>
-    <!-- results acheived  -->
 
 
     <!-- aos js links -->
